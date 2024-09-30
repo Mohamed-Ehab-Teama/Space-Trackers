@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planet Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .quiz-container {
+        text-align: center;
+      }
+
+      button {
+        margin: 10px;
+        padding: 10px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="quiz-container">
+      <h1>Planet Quiz</h1>
+      <p id="question">Which planet is the largest in the Solar System?</p>
+
+      <button onclick="checkAnswer('Earth')">Earth</button>
+      <button onclick="checkAnswer('Jupiter')">Jupiter</button>
+      <button onclick="checkAnswer('Mars')">Mars</button>
+      <button onclick="checkAnswer('Venus')">Venus</button>
+      <button onclick="checkAnswer('Saturn')">Saturn</button>
+      <button onclick="checkAnswer('Pluto')">Pluto</button>
+
+      <p id="result"></p>
+    </div>
+
+
+    <center>
+      <a href="../index.php" class="btn btn-warning m-5">Games Page</a>
+    </center>
+
+    <script>
+      const questions = [
+        {
+          question: "Which planet is the largest in the Solar System?",
+          correct: "Jupiter",
+        },
+        { question: "Which planet is closest to the Sun?", correct: "Mercury" },
+        { question: "Which planet is farthest from the Sun?", correct: "Pluto" },
+        {
+          question: "Which planet is known as the Red Planet?",
+          correct: "Mars",
+        },
+        { question: "Which planet has rings around it?", correct: "Saturn" },
+        { question: "Which planet is known as the Blue Planet?", correct: "Earth" },
+      ];
+
+      let currentQuestionIndex = 0;
+      let score = 0;
+
+      function checkAnswer(answer) {
+        const resultElement = document.getElementById("result");
+        if (answer === questions[currentQuestionIndex].correct) {
+          score++;
+          resultElement.textContent = "Correct! Your score is " + score;
+        } else {
+          resultElement.textContent =
+            "Wrong! The correct answer was " +
+            questions[currentQuestionIndex].correct;
+        }
+
+        currentQuestionIndex++;
+        if (currentQuestionIndex < questions.length) {
+          loadNextQuestion();
+        } else {
+          resultElement.textContent += " Quiz Over!";
+        }
+      }
+
+      function loadNextQuestion() {
+        const questionElement = document.getElementById("question");
+        questionElement.textContent = questions[currentQuestionIndex].question;
+        document.getElementById("result").textContent = "";
+      }
+    </script>
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
