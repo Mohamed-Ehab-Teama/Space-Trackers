@@ -106,7 +106,7 @@
 
         if ($quiz): ?>
             <?php
-            if ($total_sessions_completed == 12) : ?>
+            if ($total_sessions_completed == 6) : ?>
                 <center class="m-3">
                     <a href="quiz.php?quiz_id=<?= htmlspecialchars($quiz['id']); ?>" class="btn btn-success ">Take Quiz</a>
                 </center>

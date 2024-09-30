@@ -28,7 +28,7 @@ if (!$session) {
 $user_id = $_SESSION['user_id'];
 
 // Initialize variables for session limit
-$max_sessions_per_day = 30; // Maximum sessions a user can complete in a day
+$max_sessions_per_day = 50; // Maximum sessions a user can complete in a day
 
 // Get today's date
 $today = date('Y-m-d');

@@ -22,7 +22,8 @@ $user_id = $_SESSION['user_id'];
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="icon" href="./images/logo.jpg" />
     <link rel="stylesheet" href="./css/index.css">
 
@@ -129,51 +130,65 @@ $user_id = $_SESSION['user_id'];
                 <!-- Row 1 -->
                 <div class="row-div d-flex flex-row justify-content-around">
                     <div class="card col">
-                        <center>
-                            <img src="./images/solar-system-bg.jpg" class="card-img-top" alt="...">
-                            <h3>Solar System</h3>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    The solar system includes the Sun, eight planets, five officially named dwarf planets, and hundreds of moons, and thousands of asteroids and comets
-                                </p>
-                            </div>
-                        </center>
+                        <a href="https://en.wikipedia.org/wiki/Solar_System" target="_blank"
+                            style="text-decoration: none;">
+                            <center>
+                                <img src="./images/solar-system-bg.jpg" class="card-img-top" alt="...">
+                                <h3>Solar System</h3>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        The solar system includes the Sun, eight planets, five officially named dwarf
+                                        planets, and hundreds of moons, and thousands of asteroids and comets
+                                    </p>
+                                </div>
+                            </center>
+                        </a>
                     </div>
                     <div class="card col">
-                        <center>
-                            <img src="./images/sun.jpeg" class="card-img-top" alt="...">
-                            <h3>The SUN</h3>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    The Sun is a massive, nearly perfect sphere of hot plasma at the center of the Solar System.
-                                </p>
-                            </div>
-                        </center>
+                        <a href="https://en.wikipedia.org/wiki/Sun" target="_blank" style="text-decoration: none;">
+                            <center>
+                                <img src="./images/sun.jpeg" class="card-img-top" alt="...">
+                                <h3>The SUN</h3>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        The Sun is a massive, nearly perfect sphere of hot plasma at the center of the
+                                        Solar
+                                        System.
+                                    </p>
+                                </div>
+                            </center>
+                        </a>
                     </div>
                 </div>
                 <!-- Row 2 -->
                 <div class="row-div d-flex flex-row justify-content-around">
                     <div class="card col">
+                        <a href="https://en.wikipedia.org/wiki/Planet" target="_blank" style="text-decoration: none;">
                         <center>
                             <img src="./images/planets.jpeg" class="card-img-top" alt="...">
                             <h3>The Planets</h3>
                             <div class="card-body">
                                 <p class="card-text">
-                                    A planet is a large, rounded astronomical body that is generally required to be in orbit around a star, stellar remnant, or brown dwarf, and is not one itself.
+                                    A planet is a large, rounded astronomical body that is generally required to be in
+                                    orbit around a star, stellar remnant, or brown dwarf, and is not one itself.
                                 </p>
                             </div>
                         </center>
+                        </a>
                     </div>
                     <div class="card col">
+                        <a href="https://en.wikipedia.org/wiki/Eclipse" target="_blank" style="text-decoration: none;">
                         <center>
                             <img src="./images/eclipse.jpeg" class="card-img-top" alt="...">
                             <h3>The Eclipse</h3>
                             <div class="card-body">
                                 <p class="card-text">
-                                    A solar eclipse occurs when the Moon passes between Earth and the Sun, thereby obscuring the view of the Sun from a small part of Earth, totally or partially
+                                    A solar eclipse occurs when the Moon passes between Earth and the Sun, thereby
+                                    obscuring the view of the Sun from a small part of Earth, totally or partially
                                 </p>
                             </div>
                         </center>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -196,31 +211,43 @@ $user_id = $_SESSION['user_id'];
                 <!-- Row 1 -->
                 <div class="row-div d-flex flex-row justify-content-around">
                     <div class="card col">
+                        <a href="https://en.wikipedia.org/wiki/Solar_wind" target="_blank" style="text-decoration: none;">
                         <center>
                             <img src="./images/solar wind 0.webp" class="card-img-top" alt="...">
                             <h3>Solar Wind</h3>
                             <div class="card-body">
                                 <p class="card-text">
-                                    The solar wind is a continual stream of protons and electrons from the sun's outermost atmosphere — the corona.
+                                    The solar wind is a continual stream of protons and electrons from the sun's
+                                    outermost atmosphere — the corona.
                                     <br>
                                     <br>
-                                    These charged particles breeze through the solar system at speeds ranging from around 250 miles (400 kilometers) per second to 500 miles (800 km) per second, in a plasma state, according to the National Oceanic and Administration Space Weather Prediction Center (SWPC)
+                                    These charged particles breeze through the solar system at speeds ranging from
+                                    around 250 miles (400 kilometers) per second to 500 miles (800 km) per second, in a
+                                    plasma state, according to the National Oceanic and Administration Space Weather
+                                    Prediction Center (SWPC)
                                 </p>
                             </div>
                         </center>
+                        </a>
                     </div>
                     <div class="card col">
+                        <a href="https://en.wikipedia.org/wiki/Sunspot" target="_blank" style="text-decoration: none;">
                         <center>
                             <img src="./images/sunspot.jpeg" class="card-img-top" alt="...">
                             <h3>SunSpots</h3>
                             <div class="card-body">
                                 <p class="card-text">
-                                    Sunspots are cooler regions on the Sun caused by a concentration of magnetic field lines.
+                                    Sunspots are cooler regions on the Sun caused by a concentration of magnetic field
+                                    lines.
                                     <br>
-                                    Occasionally, dark spots freckle the face of the Sun. These are sunspots, cooler regions on the Sun caused by a concentration of magnetic field lines. Sunspots are the visible component of active regions, areas of intense and complex magnetic fields on the Sun that are the source of solar eruptions
+                                    Occasionally, dark spots freckle the face of the Sun. These are sunspots, cooler
+                                    regions on the Sun caused by a concentration of magnetic field lines. Sunspots are
+                                    the visible component of active regions, areas of intense and complex magnetic
+                                    fields on the Sun that are the source of solar eruptions
                                 </p>
                             </div>
                         </center>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -238,34 +265,45 @@ $user_id = $_SESSION['user_id'];
                 <!-- Row 1 -->
                 <div class="row-div d-flex flex-row justify-content-around">
                     <div class="card col">
+                        <a href="https://en.wikipedia.org/wiki/Telescope" target="_blank" style="text-decoration: none;">
                         <center>
                             <img src="./images/telescope.jpeg" class="card-img-top" alt="...">
                             <h3>Telescope</h3>
                             <div class="card-body">
                                 <p class="card-text">
-                                    A telescope is a device used to observe distant objects by their emission, absorption, or reflection of electromagnetic radiation.
+                                    A telescope is a device used to observe distant objects by their emission,
+                                    absorption, or reflection of electromagnetic radiation.
                                     <br>
                                     <br>
-                                    Originally, it was an optical instrument using lenses, curved mirrors, or a combination of both to observe distant objects – an optical telescope
+                                    Originally, it was an optical instrument using lenses, curved mirrors, or a
+                                    combination of both to observe distant objects – an optical telescope
                                 </p>
                             </div>
                         </center>
+                        </a>
                     </div>
                     <div class="card col">
+                        <a href="https://en.wikipedia.org/wiki/Space_Exploration_Vehicle" target="_blank" style="text-decoration: none;">
                         <center>
                             <img src="./images/vechile explo.jpeg" class="card-img-top" alt="...">
                             <h3>Space Exploration Vehicle (SEV)</h3>
                             <div class="card-body">
                                 <p class="card-text">
-                                    The Space Exploration Vehicle (SEV) is a modular vehicle concept developed by NASA from 2008 to 2015.
+                                    The Space Exploration Vehicle (SEV) is a modular vehicle concept developed by NASA
+                                    from 2008 to 2015.
                                     <br>
                                     <br>
-                                    It would have consisted of a pressurized cabin that could be mated either with a wheeled chassis to form a rover for planetary surface exploration (on the Moon and elsewhere) or to a flying platform for open space missions such as servicing satellites and missions to near-Earth asteroids.
+                                    It would have consisted of a pressurized cabin that could be mated either with a
+                                    wheeled chassis to form a rover for planetary surface exploration (on the Moon and
+                                    elsewhere) or to a flying platform for open space missions such as servicing
+                                    satellites and missions to near-Earth asteroids.
                                 </p>
                             </div>
                         </center>
+                        </a>
                     </div>
                     <div class="card col">
+                        <a href="https://en.wikipedia.org/wiki/Spacecraft" target="_blank" style="text-decoration: none;">
                         <center>
                             <img src="./images/space craft.jpeg" class="card-img-top" alt="...">
                             <h3>Space Craft</h3>
@@ -274,10 +312,13 @@ $user_id = $_SESSION['user_id'];
                                     A spacecraft is a vehicle that is designed to fly and operate in outer space.
                                     <br>
                                     <br>
-                                    Spacecraft are used for a variety of purposes, including communications, Earth observation, meteorology, navigation, space colonization, planetary exploration, and transportation of humans and cargo.
+                                    Spacecraft are used for a variety of purposes, including communications, Earth
+                                    observation, meteorology, navigation, space colonization, planetary exploration, and
+                                    transportation of humans and cargo.
                                 </p>
                             </div>
                         </center>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -293,21 +334,24 @@ $user_id = $_SESSION['user_id'];
     <footer class="my-footer text-center text-lg-start bg-transparent" style="background-color: #db6930;">
         <div class="container d-flex justify-content-center py-5">
             <a href="https://www.facebook.com/NASA/" target="_blank">
-                <button type="button" class="btn btn-primary bg-transparent btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                <button type="button" class="btn btn-primary bg-transparent btn-lg btn-floating mx-2"
+                    style="background-color: #54456b;">
                     <i class="fab fa-facebook">
                         <img src="./images/facebook logo.png" alt="logo">
                     </i>
                 </button>
             </a>
             <a href="https://www.linkedin.com/company/nasa" target="_blank">
-                <button type="button" class="btn btn-primary bg-transparent btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                <button type="button" class="btn btn-primary bg-transparent btn-lg btn-floating mx-2"
+                    style="background-color: #54456b;">
                     <i class="fab fa-linkedin">
                         <img src="./images/linkedin logo.jpg" alt="logo">
                     </i>
                 </button>
             </a>
             <a href="https://www.youtube.com/user/NASAtelevision" target="_blank">
-                <button type="button" class="btn btn-primary bg-transparent btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                <button type="button" class="btn btn-primary bg-transparent btn-lg btn-floating mx-2"
+                    style="background-color: #54456b;">
                     <i class="fab fa-linkedin">
                         <img src="./images/youtube logo.png" alt="logo">
                     </i>
@@ -327,7 +371,9 @@ $user_id = $_SESSION['user_id'];
 
 
     <script src="./js/back-vid.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
