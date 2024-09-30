@@ -5,6 +5,18 @@ if (!isset($_SESSION['user_id'])) {
     die("You must be logged in to access this page.");
 }
 
+$extra_info = [
+    "Mercury is the smallest planet in our solar system, and the nearest to the Sun",
+    "Venus is the second planet from the Sun, and Earth's closest planetary neighbor",
+    "Earth : our home planet : is the third planet from the Sun, and the fifth largest planet",
+    "Mars : the fourth planet from the Sun : is a dusty, cold, desert world with a very thin atmosphere",
+    "Jupiter is the largest planet in our solar system : if it were a hollow shell, 1,000 Earths could fit inside.",
+    "Pluto was long considered our solar system's ninth planet. But it was reclassified as a dwarf planet in 2006 by the International Astronomical Union",
+    "Haumea was nicknamed Santa by one discovery team. It is oval-shaped, and is one of the fastest rotating large objects in our solar system",
+    "Extra Info: Remember, planets like Jupiter protect Earth from asteroids by attracting them with their gravity!",
+    'Our planetary system is called “the solar system” because we use the word “solar” to describe things related to our star, after the Latin word for Sun, "solis."'
+];
+
 // Get the quiz ID from the URL
 $quiz_id = $_GET['quiz_id'] ?? null;
 
@@ -88,7 +100,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         // Notify the user of success
         echo "Congratulations! You passed the quiz with a score of $score%. You earned $coins_awarded coins.";
-        
+        $rand_index = array_rand($extra_info);
+        ?>
+
+        <script>
+            alert("<?php echo $extra_info[$rand_index]; ?>");
+        </script>
+
+        <?php
         // Redirect after a delay
         header("refresh:2; url=game.php");
         exit;

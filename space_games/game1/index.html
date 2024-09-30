@@ -3,111 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asteroid Dodger</title>
-    <link rel="icon" href="../../images/logo.jpg" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Asteroid Dodger Game</title>
     <style>
-        body {
+        * {
             margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: black;
             overflow: hidden;
         }
-
         canvas {
             display: block;
-            background: black;
+            background-image: url('space-background.jpg');
+            background-size: cover;
         }
     </style>
 </head>
 <body>
-    
-    <canvas id="dodgerCanvas"></canvas>
+    <canvas id="gameCanvas"></canvas>
 
-
-
-    <script>
-        const canvas = document.getElementById('dodgerCanvas');
-        const ctx = canvas.getContext('2d');
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
-        // Load spaceship image
-        const spaceshipImg = new Image();
-        spaceshipImg.src = '../../images/spaceShip.jpg';
-
-        let spaceship = {
-            x: canvas.width / 2 - 25,
-            y: canvas.height - 100,
-            width: 100,
-            height: 100,
-            speed: 18
-        };
-
-        // Asteroids array
-        let asteroids = [];
-
-        // Function to spawn asteroids
-        function spawnAsteroids() {
-            let size = Math.random() * 30 + 20;
-            let x = Math.random() * (canvas.width - size);
-            let speed = Math.random() * 2 + 2;
-            asteroids.push({ x, y: -size, size, speed });
-        }
-
-        function updateGame() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-            // Draw spaceship
-            ctx.drawImage(spaceshipImg, spaceship.x, spaceship.y, spaceship.width, spaceship.height);
-
-            // Update and draw asteroids
-            asteroids.forEach((asteroid, index) => {
-                asteroid.y += asteroid.speed;
-                ctx.fillStyle = 'gray';
-                ctx.beginPath();
-                ctx.arc(asteroid.x, asteroid.y, asteroid.size, 0, Math.PI * 2);
-                ctx.fill();
-
-                // Remove off-screen asteroids
-                if (asteroid.y > canvas.height) {
-                    asteroids.splice(index, 1);
-                }
-
-                // Check for collision with spaceship
-                if (asteroid.x < spaceship.x + spaceship.width &&
-                    asteroid.x + asteroid.size > spaceship.x &&
-                    asteroid.y < spaceship.y + spaceship.height &&
-                    asteroid.y + asteroid.size > spaceship.y) {
-                    gameOver();
-                }
-            });
-
-            // Spawn new asteroids
-            if (Math.random() < 0.02) {
-                spawnAsteroids();
-            }
-
-            requestAnimationFrame(updateGame);
-        }
-
-        function gameOver() {
-            ctx.fillStyle = 'white';
-            ctx.font = '50px Arial';
-            ctx.fillText('Game Over', canvas.width / 2 - 150, canvas.height / 2);
-        }
-
-        document.addEventListener('keydown', (event) => {
-            if (event.key === 'ArrowLeft' && spaceship.x > 0) {
-                spaceship.x -= spaceship.speed;
-            } else if (event.key === 'ArrowRight' && spaceship.x < canvas.width - spaceship.width) {
-                spaceship.x += spaceship.speed;
-            }
-        });
-
-        updateGame();
-    </script>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./asteroid-dodger.js"></script>
 </body>
 </html>

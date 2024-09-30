@@ -73,6 +73,7 @@ $user_id = $_SESSION['user_id'];
 <!-- <body style=" background-image: url(./images/solar-system-bg.jpg); background-size: cover; "> -->
 
 <body>
+    <!-- Background Video -->
     <video autoplay muted loop id="myVideo">
         <source src="./vids/background-vid.mp4" type="video/mp4">
     </video>
@@ -104,6 +105,14 @@ $user_id = $_SESSION['user_id'];
                     <li class="nav-item">
                         <a class="nav-link" href="./space_games/index.php">
                             <button type="button" class="btn btn-outline-warning">Games</button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./search.php">
+                            <button type="button" class="btn btn-outline-warning">
+                                Search
+                                <img src="./images/search.png" alt="search" width="20px">
+                            </button>
                         </a>
                     </li>
                 </ul>
@@ -164,30 +173,31 @@ $user_id = $_SESSION['user_id'];
                 <div class="row-div d-flex flex-row justify-content-around">
                     <div class="card col">
                         <a href="https://en.wikipedia.org/wiki/Planet" target="_blank" style="text-decoration: none;">
-                        <center>
-                            <img src="./images/planets.jpeg" class="card-img-top" alt="...">
-                            <h3>The Planets</h3>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    A planet is a large, rounded astronomical body that is generally required to be in
-                                    orbit around a star, stellar remnant, or brown dwarf, and is not one itself.
-                                </p>
-                            </div>
-                        </center>
+                            <center>
+                                <img src="./images/planets.jpeg" class="card-img-top" alt="...">
+                                <h3>The Planets</h3>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        A planet is a large, rounded astronomical body that is generally required to be
+                                        in
+                                        orbit around a star, stellar remnant, or brown dwarf, and is not one itself.
+                                    </p>
+                                </div>
+                            </center>
                         </a>
                     </div>
                     <div class="card col">
                         <a href="https://en.wikipedia.org/wiki/Eclipse" target="_blank" style="text-decoration: none;">
-                        <center>
-                            <img src="./images/eclipse.jpeg" class="card-img-top" alt="...">
-                            <h3>The Eclipse</h3>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    A solar eclipse occurs when the Moon passes between Earth and the Sun, thereby
-                                    obscuring the view of the Sun from a small part of Earth, totally or partially
-                                </p>
-                            </div>
-                        </center>
+                            <center>
+                                <img src="./images/eclipse.jpeg" class="card-img-top" alt="...">
+                                <h3>The Eclipse</h3>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        A solar eclipse occurs when the Moon passes between Earth and the Sun, thereby
+                                        obscuring the view of the Sun from a small part of Earth, totally or partially
+                                    </p>
+                                </div>
+                            </center>
                         </a>
                     </div>
                 </div>
@@ -211,42 +221,46 @@ $user_id = $_SESSION['user_id'];
                 <!-- Row 1 -->
                 <div class="row-div d-flex flex-row justify-content-around">
                     <div class="card col">
-                        <a href="https://en.wikipedia.org/wiki/Solar_wind" target="_blank" style="text-decoration: none;">
-                        <center>
-                            <img src="./images/solar wind 0.webp" class="card-img-top" alt="...">
-                            <h3>Solar Wind</h3>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    The solar wind is a continual stream of protons and electrons from the sun's
-                                    outermost atmosphere — the corona.
-                                    <br>
-                                    <br>
-                                    These charged particles breeze through the solar system at speeds ranging from
-                                    around 250 miles (400 kilometers) per second to 500 miles (800 km) per second, in a
-                                    plasma state, according to the National Oceanic and Administration Space Weather
-                                    Prediction Center (SWPC)
-                                </p>
-                            </div>
-                        </center>
+                        <a href="https://en.wikipedia.org/wiki/Solar_wind" target="_blank"
+                            style="text-decoration: none;">
+                            <center>
+                                <img src="./images/solar wind 0.webp" class="card-img-top" alt="...">
+                                <h3>Solar Wind</h3>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        The solar wind is a continual stream of protons and electrons from the sun's
+                                        outermost atmosphere — the corona.
+                                        <br>
+                                        <br>
+                                        These charged particles breeze through the solar system at speeds ranging from
+                                        around 250 miles (400 kilometers) per second to 500 miles (800 km) per second,
+                                        in a
+                                        plasma state, according to the National Oceanic and Administration Space Weather
+                                        Prediction Center (SWPC)
+                                    </p>
+                                </div>
+                            </center>
                         </a>
                     </div>
                     <div class="card col">
                         <a href="https://en.wikipedia.org/wiki/Sunspot" target="_blank" style="text-decoration: none;">
-                        <center>
-                            <img src="./images/sunspot.jpeg" class="card-img-top" alt="...">
-                            <h3>SunSpots</h3>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    Sunspots are cooler regions on the Sun caused by a concentration of magnetic field
-                                    lines.
-                                    <br>
-                                    Occasionally, dark spots freckle the face of the Sun. These are sunspots, cooler
-                                    regions on the Sun caused by a concentration of magnetic field lines. Sunspots are
-                                    the visible component of active regions, areas of intense and complex magnetic
-                                    fields on the Sun that are the source of solar eruptions
-                                </p>
-                            </div>
-                        </center>
+                            <center>
+                                <img src="./images/sunspot.jpeg" class="card-img-top" alt="...">
+                                <h3>SunSpots</h3>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Sunspots are cooler regions on the Sun caused by a concentration of magnetic
+                                        field
+                                        lines.
+                                        <br>
+                                        Occasionally, dark spots freckle the face of the Sun. These are sunspots, cooler
+                                        regions on the Sun caused by a concentration of magnetic field lines. Sunspots
+                                        are
+                                        the visible component of active regions, areas of intense and complex magnetic
+                                        fields on the Sun that are the source of solar eruptions
+                                    </p>
+                                </div>
+                            </center>
                         </a>
                     </div>
                 </div>
@@ -265,59 +279,65 @@ $user_id = $_SESSION['user_id'];
                 <!-- Row 1 -->
                 <div class="row-div d-flex flex-row justify-content-around">
                     <div class="card col">
-                        <a href="https://en.wikipedia.org/wiki/Telescope" target="_blank" style="text-decoration: none;">
-                        <center>
-                            <img src="./images/telescope.jpeg" class="card-img-top" alt="...">
-                            <h3>Telescope</h3>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    A telescope is a device used to observe distant objects by their emission,
-                                    absorption, or reflection of electromagnetic radiation.
-                                    <br>
-                                    <br>
-                                    Originally, it was an optical instrument using lenses, curved mirrors, or a
-                                    combination of both to observe distant objects – an optical telescope
-                                </p>
-                            </div>
-                        </center>
+                        <a href="https://en.wikipedia.org/wiki/Telescope" target="_blank"
+                            style="text-decoration: none;">
+                            <center>
+                                <img src="./images/telescope.jpeg" class="card-img-top" alt="...">
+                                <h3>Telescope</h3>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        A telescope is a device used to observe distant objects by their emission,
+                                        absorption, or reflection of electromagnetic radiation.
+                                        <br>
+                                        <br>
+                                        Originally, it was an optical instrument using lenses, curved mirrors, or a
+                                        combination of both to observe distant objects – an optical telescope
+                                    </p>
+                                </div>
+                            </center>
                         </a>
                     </div>
                     <div class="card col">
-                        <a href="https://en.wikipedia.org/wiki/Space_Exploration_Vehicle" target="_blank" style="text-decoration: none;">
-                        <center>
-                            <img src="./images/vechile explo.jpeg" class="card-img-top" alt="...">
-                            <h3>Space Exploration Vehicle (SEV)</h3>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    The Space Exploration Vehicle (SEV) is a modular vehicle concept developed by NASA
-                                    from 2008 to 2015.
-                                    <br>
-                                    <br>
-                                    It would have consisted of a pressurized cabin that could be mated either with a
-                                    wheeled chassis to form a rover for planetary surface exploration (on the Moon and
-                                    elsewhere) or to a flying platform for open space missions such as servicing
-                                    satellites and missions to near-Earth asteroids.
-                                </p>
-                            </div>
-                        </center>
+                        <a href="https://en.wikipedia.org/wiki/Space_Exploration_Vehicle" target="_blank"
+                            style="text-decoration: none;">
+                            <center>
+                                <img src="./images/vechile explo.jpeg" class="card-img-top" alt="...">
+                                <h3>Space Exploration Vehicle (SEV)</h3>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        The Space Exploration Vehicle (SEV) is a modular vehicle concept developed by
+                                        NASA
+                                        from 2008 to 2015.
+                                        <br>
+                                        <br>
+                                        It would have consisted of a pressurized cabin that could be mated either with a
+                                        wheeled chassis to form a rover for planetary surface exploration (on the Moon
+                                        and
+                                        elsewhere) or to a flying platform for open space missions such as servicing
+                                        satellites and missions to near-Earth asteroids.
+                                    </p>
+                                </div>
+                            </center>
                         </a>
                     </div>
                     <div class="card col">
-                        <a href="https://en.wikipedia.org/wiki/Spacecraft" target="_blank" style="text-decoration: none;">
-                        <center>
-                            <img src="./images/space craft.jpeg" class="card-img-top" alt="...">
-                            <h3>Space Craft</h3>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    A spacecraft is a vehicle that is designed to fly and operate in outer space.
-                                    <br>
-                                    <br>
-                                    Spacecraft are used for a variety of purposes, including communications, Earth
-                                    observation, meteorology, navigation, space colonization, planetary exploration, and
-                                    transportation of humans and cargo.
-                                </p>
-                            </div>
-                        </center>
+                        <a href="https://en.wikipedia.org/wiki/Spacecraft" target="_blank"
+                            style="text-decoration: none;">
+                            <center>
+                                <img src="./images/space craft.jpeg" class="card-img-top" alt="...">
+                                <h3>Space Craft</h3>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        A spacecraft is a vehicle that is designed to fly and operate in outer space.
+                                        <br>
+                                        <br>
+                                        Spacecraft are used for a variety of purposes, including communications, Earth
+                                        observation, meteorology, navigation, space colonization, planetary exploration,
+                                        and
+                                        transportation of humans and cargo.
+                                    </p>
+                                </div>
+                            </center>
                         </a>
                     </div>
                 </div>
