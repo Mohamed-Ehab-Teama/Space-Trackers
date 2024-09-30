@@ -23,7 +23,7 @@ $user_id = $_SESSION['user_id'];
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="icon" href="./images/logo.png" />
+    <link rel="icon" href="./images/logo.jpg" />
     <link rel="stylesheet" href="./css/index.css">
 
     <style>
@@ -80,7 +80,7 @@ $user_id = $_SESSION['user_id'];
     <nav class="nav-style navbar navbar-expand-lg bg-transparent ">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.php">
-                <img src="./images/logo.png" alt="Bootstrap" width="50" height="45">
+                <img src="./images/logo.jpg" alt="Bootstrap" width="50" height="45">
             </a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -119,7 +119,7 @@ $user_id = $_SESSION['user_id'];
     <!-- First Card Content -->
     <div class="main-card card mt-5">
         <div class="card-body">
-            <h1 class="card-title text-center">Solar System Exploration</h1>
+            <h1 class="card-title text-center">Space Trackers</h1>
             <br>
             <p class="card-text">
                 Join us as we explore our planetary neighborhood: The Sun, planets, moons, comets, and asteroids.
