@@ -7,7 +7,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Level Details</title>
-    <link rel="icon" href="../images/logo.jpg" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
@@ -55,6 +54,7 @@
     </video>
 
 
+
     <div class="container mt-5">
         <h1 class="text-center text-warning mb-5">Level Details</h1>
         <?php
@@ -79,7 +79,7 @@
 
             foreach ($sessions as $session) {
                 echo "
-                <a href='session.php?level_id={$level_id}&session_id={$session['id']}' class='list-group-item list-group-item-action bg-transparent text-white m-4 border border-warning rounded-pill pl-5'>
+                <a href='session.php?level_id={$level_id}&session_id={$session['session_number']}&level_number={$level['level_number']}' class='list-group-item list-group-item-action bg-transparent text-white m-4 border border-warning rounded-pill pl-5'>
                     Go To Session {$session['session_number']}
                 </a>
                 ";
@@ -106,7 +106,7 @@
 
         if ($quiz): ?>
             <?php
-            if ($total_sessions_completed == 6) : ?>
+            if ($total_sessions_completed == 12): ?>
                 <center class="m-3">
                     <a href="quiz.php?quiz_id=<?= htmlspecialchars($quiz['id']); ?>" class="btn btn-success ">Take Quiz</a>
                 </center>

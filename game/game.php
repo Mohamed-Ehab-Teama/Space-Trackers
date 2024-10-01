@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Exploration Game</title>
-    <link rel="icon" href="../images/logo.jpg" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* .hero {
@@ -65,7 +64,7 @@
     </video>
 
     <div class="hero text-center text-white">
-        <h1 class="text-warning">Welcome to Space Exploration Game!</h1>
+        <h1 class="text-warning">Let's Start Learning!</h1>
     </div>
 
     <div class="container">
