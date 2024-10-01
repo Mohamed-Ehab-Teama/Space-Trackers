@@ -53,8 +53,6 @@
         <source src="../vids/background-vid.mp4" type="video/mp4">
     </video>
 
-
-
     <div class="container mt-5">
         <h1 class="text-center text-warning mb-5">Level Details</h1>
         <?php

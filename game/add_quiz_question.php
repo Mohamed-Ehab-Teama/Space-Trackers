@@ -87,6 +87,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
         <button type="submit" class="btn btn-primary">Add Question</button>
     </form>
+    <center>
+        <a href="./game.php" class="btn btn-outline-warning btn-block m-3">Back To Home Page</a>
+    </center>
 </div>
 </body>
 </html>

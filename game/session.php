@@ -11,7 +11,7 @@ if (!isset($_SESSION['user_id'])) {
 // Get the level_id and session_id from the URL
 $level_id = $_GET['level_id']; // Get the level_id from the URL
 $session_id = $_GET['session_id']; // Get the specific session_id from the URL
-$level_number = $_GET['level_number'];
+$level_number = $_GET['level_number']; 
 
 // Fetch the specific session for the level
 $query = "SELECT * FROM sessions WHERE level_id = :level_id AND session_number = :session_id";
@@ -134,7 +134,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <video autoplay muted loop id="myVideo">
         <source src="../vids/background-vid.mp4" type="video/mp4">
     </video>
-
 
     <div class="container">
         <h1 class="text-center text-warning m-5">Session for Level <?= htmlspecialchars($level_number); ?></h1>

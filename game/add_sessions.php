@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
             <button type="submit" class="btn btn-primary btn-block">Add Session</button>
         </form>
-        <a href="game.php" class="btn btn-secondary btn-block mt-3">Back to Home</a>
+        <a href="./game.php" class="btn btn-secondary btn-block mt-3">Back to Home</a>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
