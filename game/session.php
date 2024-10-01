@@ -137,7 +137,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     <div class="container">
         <h1 class="text-center text-warning m-5">Session for Level <?= htmlspecialchars($level_id); ?></h1>
-        <div class="session border border-warning rounded-pill">
+        <div class="session border border-warning rounded">
             <h3 class="text-center text-warning mt-5">Session <?= htmlspecialchars($session['session_number']); ?></h3>
             <p class="text-white mt-5 p-5"><?= htmlspecialchars($session['content']); ?></p>
             <?php if ($session['is_completed']): ?>

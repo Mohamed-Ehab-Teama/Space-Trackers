@@ -115,7 +115,7 @@
             <p>No quiz available for this level.</p>
         <?php endif; ?>
 
-        <a href="game.php" class="btn btn-info btn-block m-5">Back to Home</a>
+        <a href="./game.php" class="btn btn-info btn-block m-5">Back to Home</a>
     </div>
 
     <script src="../js/back-vid.js"></script>

@@ -81,7 +81,7 @@
             foreach ($levels as $level) {
                 echo "
                 <div class='col-md-4 mb-4'>
-                    <div class='card bg-transparent border-warning rounded-pill p-5 m-2'>
+                    <div class='card bg-transparent border-warning rounded p-3 m-2'>
                         <div class='card-body'>
                             <h5 class='card-title text-warning'>{$level['level_name']}</h5>
                             <p class='card-text text-light'>{$level['description']}</p>
