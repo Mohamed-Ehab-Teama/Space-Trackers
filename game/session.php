@@ -11,7 +11,7 @@ if (!isset($_SESSION['user_id'])) {
 // Get the level_id and session_id from the URL
 $level_id = $_GET['level_id']; // Get the level_id from the URL
 $session_id = $_GET['session_id']; // Get the specific session_id from the URL
-$level_number = $_GET['level_number']; 
+$level_number = $_GET['level_number'];
 
 // Fetch the specific session for the level
 $query = "SELECT * FROM sessions WHERE level_id = :level_id AND session_number = :session_id";
@@ -29,7 +29,7 @@ if (!$session) {
 $user_id = $_SESSION['user_id'];
 
 // Initialize variables for session limit
-$max_sessions_per_day = 2; // Maximum sessions a user can complete in a day
+$max_sessions_per_day = 200; // Maximum sessions a user can complete in a day
 
 // Get today's date
 $today = date('Y-m-d');
@@ -47,7 +47,7 @@ $completed_today = $count_result['session_count'];
 // Complete a session
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Check if the session is already completed by the user
-    $check_query = "SELECT is_completed, coins_awarded FROM sessions WHERE id = :session_id AND user_id = :user_id";
+    $check_query = "SELECT is_completed, coins_awarded FROM sessions WHERE session_number = :session_id AND user_id = :user_id";
     $check_stmt = $connection->prepare($check_query);
     $check_stmt->bindParam(':session_id', $session_id);
     $check_stmt->bindParam(':user_id', $user_id);
@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "You have reached the maximum of $max_sessions_per_day sessions for today.";
     } else {
         // Update session as completed
-        $update_query = "UPDATE sessions SET is_completed = 1, user_id = :user_id, completed_at = NOW() WHERE id = :session_id";
+        $update_query = "UPDATE sessions SET is_completed = 1, user_id = :user_id, completed_at = NOW() WHERE session_number = :session_id";
         $update_stmt = $connection->prepare($update_query);
         $update_stmt->execute([
             'session_id' => $session_id,
